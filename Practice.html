@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Belajar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    body {
+        background-color: rgb(220, 220, 220);
+    }
+    .kik {
+        border: 5px ridge rgb(144, 181, 144);
+    }
+    .content {
+        flex-direction: row;
+        display:flex;
+    }
+    .content > div {
+        display:flex;
+        flex:1;
+        align-content: center;
+        justify-content: center;
+    }
+    footer > p {
+        text-align: end;
+    }
+    th, td {
+        border: 2px solid darkolivegreen;
+        text-align: center;
+        font-size: 15px;
+        padding: 4px;
+        
+    }
+</style>
+    </head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">KBLCLK</a>
+            <img src="KBLCLK-logoonly.png"alt="Logo KBLCLK"width="50"height="50"/>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </nav>
+
+    <header>
+        <h1>Form Belajar</h1>
+        <p>Ini adalah website latihan pertama</p>
+    </header>
+
+    <main class="content"
+        
+        <div>
+            <h2>Ini Form</h2>
+        </div>
+
+        <div>
+            <table class="kik">
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Hapus</th>
+                </tr>
+                <tr>
+                    <td>Jaguar</td>
+                    <td>12 Januari 1996</td>
+                    <td>Laki-Laki</td>
+                    <td>Belajar Buat Website</td>
+                    <td><a href="#">Klik di Sini</a></td>
+                    <td>Gambar</td>
+                    </tr>
+                </table>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
