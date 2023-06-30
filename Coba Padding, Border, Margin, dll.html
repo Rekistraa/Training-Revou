@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head><style>
-        div {
-            background-color:lightblue;
-            width: 100px;
-            height: 100px;
-            margin-top: 10px;
+    <head>
+        <style>
+        .divWithBoxSizing {
+            background-color: steelblue;
+            padding-left: 100px;
+            width: 200px;
+            border: 15px solid black;
+            box-sizing: border-box;
+            margin-bottom: 20px; 
+            }
+        .divWithoutBoxSizing {
+            background-color: steelblue;
+            padding-left: 100px;
+            width: 200px;
+            border: 15px solid black;
+            margin-bottom: 20px; 
+            }
+        .divWithoutpad {
+            background-color: steelblue;
+            width: 200px;
+            border: 15px solid black;
+            box-sizing: border-box; 
+            margin-bottom: 20px; 
         }
-        .tanpa-padding {
-            padding:0;
-            border: 50px black;
+        .divWithoutpadwidth {
+            background-color: steelblue;
+            border: 15px solid black;
+            box-sizing: border-box; 
+            margin-bottom: 20px; 
         }
-        .pakai-padding {
-            padding:25px;
-            border: 20px blue;
+        .divonlyborder {
+            background-color: steelblue;
+            border: 15px solid black;
+            box-sizing: content-box;
+            margin-bottom: 20px;  
         }
-    </style></head>
+        h1 {
+            color: blanchedalmond;
+        }
+        p {
+            color: rgb(58, 84, 16);
+        }
+        .flexbox {
+            display:flex;
+            background-color: darkkhaki;
+            flex-direction: row;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 300px;
+        }
+        .flexItem {
+            flex-basis: 50%;
+            flex-grow: 0;
+            background-color: beige;
+        }
+    </style>
+    </head>
         <body>
-<div class="tanpa-padding">Tanpa padding</div>
-<br>
-<div class="pakai-padding">Pakai padding</div>
+        <div class="divWithoutBoxSizing">
+        <H1>divWithoutBoxSizing</H1>
+    </div>
+        <div class="divWithBoxSizing">
+        <H1>divWithBoxSizing</H1>
+    </div>
+        <div class="divWithoutpad">
+        <H1>divWithoutpad</H1>
+    </div>
+        <div class="divWithoutpadwidth">
+        <H1>divWithoutpadwidth</H1>
+    </div>
+        <div class="divonlyborder">
+        <H1>divonlyborder</H1>
+    </div>
+        <div class="flexbox">
+        <p class="flexItem">PC gede</p>
+        <p class="flexItem">PC sedang</p>
+        <p class="flexItem">PC kecil</p>
+    </div>
         </body>
 
